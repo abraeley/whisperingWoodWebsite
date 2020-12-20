@@ -1,0 +1,85 @@
+
+
+
+<HTML>
+	<HEAD>
+<style> 
+    BODY { 
+		background-color: #000000;
+		color: #FFFFFF;
+		font-family: Courier;
+    } 
+	#name {
+	margin-left: 2%;
+	}	
+	#homepage {
+	margin-top: 2%;
+	margin-left: 50%;
+	}
+	#me {
+	margin-right: 3%;
+	margin-top: 5%;
+	color: #FFFFFF;
+	float: right;
+	max-width:20%;
+    height:auto;
+	z-index: -1;  
+	}
+	div {
+	width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+	}
+	div::after {
+		content: "";
+		background: url('images/mway.jpg');
+		background-size: 100% 100%;
+		background-position: center center;
+		background-repeat: no-repeat;
+		opacity: 0.36;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		z-index: -2;   
+	}
+	a:link {
+	font-family: Georgia;
+	text-decoration: none;
+	}
+	a:hover {
+	animation-name: color;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+	}
+	@keyframes color {
+	100% {
+	color: #8A8FF1;
+	text-decoration: underline;
+	}
+	}
+
+</style> 
+	</HEAD>
+	<TITLE>Tristan Braeley</TITLE>
+	
+	
+	<BODY >
+		<DIV>
+			<A id="homepage" href="index.html">
+				Homepage
+			</A>
+			<H1 id="name">
+				<B>Tristan Braeley</B>
+			</H1>
+			<IMG id="me" src="images/Me.jpg">
+			</IMG>
+
+		</DIV>		
+	</BODY>
+	<script src="jquery/jquery.js"></script>
+
+	
+</HTML>
